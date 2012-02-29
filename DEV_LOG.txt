@@ -1,1 +1,2 @@
 - [13:30] 20 minutes just waisted setting up mysql, would require at least 30 more minutes to complete as I don't have all required packages. Using sqlite3 for now.
+- [14:35] running into Rails 3.2 issues with associations
