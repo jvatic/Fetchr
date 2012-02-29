@@ -6,7 +6,7 @@
 
 <ul>
   <% @page.links.each do |link| %>
-    <li><a href='<%= link.url %>' <%= resource_attributes(link) %>
+    <li><a href='<%= link.url %>' <%= resource_attributes(link) %>><%= link.url %></a>
   <% end %>
 </ul>
 

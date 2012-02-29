@@ -8,9 +8,9 @@ module Scraper
       @page = Page.where(:url => url).first_or_create!
       doc = Nokogiri::HTML( open(@page.url) )
       Import.new(@page, doc)
+      @page
     rescue SocketError => e
       @page.update_attribute(:fetch_error, e.message)
-    ensure
       @page
     end
   end
