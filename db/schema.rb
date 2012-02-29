@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20120229183802) do
 
   create_table "resources", :force => true do |t|
     t.string   "url"
-    t.text     "attributes"
+    t.text     "attrs"
     t.integer  "resourceful_id"
     t.string   "resourceful_type"
     t.datetime "created_at",       :null => false
