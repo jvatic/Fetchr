@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120229183802) do
+ActiveRecord::Schema.define(:version => 20120229191528) do
+
+  create_table "pages", :force => true do |t|
+    t.string   "url"
+    t.string   "title"
+    t.text     "body"
+    t.datetime "last_fetch_at"
+    t.string   "fetch_error"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "resources", :force => true do |t|
     t.string   "url"
