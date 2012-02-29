@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe "urls/show" do
+describe "pages/show" do
   before(:each) do
-    @url = assign(:url, stub_model(Url,
+    @page = assign(:page, stub_model(Page,
       :url => "Url",
       :title => "Title",
       :body => "MyText",
