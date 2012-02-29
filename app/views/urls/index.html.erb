@@ -1,0 +1,31 @@
+<h1>Listing urls</h1>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Last fetch at</th>
+    <th>Fetch error</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @urls.each do |url| %>
+  <tr>
+    <td><%= url.url %></td>
+    <td><%= url.title %></td>
+    <td><%= url.body %></td>
+    <td><%= url.last_fetch_at %></td>
+    <td><%= url.fetch_error %></td>
+    <td><%= link_to 'Show', url %></td>
+    <td><%= link_to 'Edit', edit_url_path(url) %></td>
+    <td><%= link_to 'Destroy', url, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Url', new_url_path %>

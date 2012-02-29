@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @url.url %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @url.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @url.body %>
+</p>
+
+<p>
+  <b>Last fetch at:</b>
+  <%= @url.last_fetch_at %>
+</p>
+
+<p>
+  <b>Fetch error:</b>
+  <%= @url.fetch_error %>
+</p>
+
+
+<%= link_to 'Edit', edit_url_path(@url) %> |
+<%= link_to 'Back', urls_path %>
