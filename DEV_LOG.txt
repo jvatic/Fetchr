@@ -1,0 +1,1 @@
+- [13:30] 20 minutes just waisted setting up mysql, would require at least 30 more minutes to complete as I don't have all required packages. Using sqlite3 for now.
